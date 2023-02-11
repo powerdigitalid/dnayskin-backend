@@ -5,6 +5,7 @@ require('dotenv').config();
 
 mongoose.set('strictQuery', true).connect(process.env.DATABASE_URL)
   .then(() => {
+    console.info(`[${process.env.NODE_ENV}] Connected to database`);
     app.listen(port, () => {
       console.log(`[${process.env.NODE_ENV}] Server is running on port ${port}`);
     });

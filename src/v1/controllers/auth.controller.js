@@ -1,13 +1,14 @@
 require("dotenv").config();
 const prisma = require("../utils/prisma");
 const jwt = require("jsonwebtoken");
+const {passwordGen, passwordCompare} = require("../utils/password");
 
 exports.register = (req, res) => {
   const { username, password } = req.body;
   prisma.user.create({
     data: {
       username: username,
-      password: password,
+      password: passwordGen(password),
     },
   })
     .then((data) => {
@@ -38,10 +39,12 @@ exports.login = (req, res) => {
           message: "User not found with username " + username,
         });
       } else {
-        if (password == data.password) {
+        if (passwordCompare(password, data.password)) {
           return res.status(200).json({
             message: "Login successfully!",
-            data: data,
+            data: {
+              username: data.username,
+            },
             token: jwt.sign({ id: data.id }, process.env.SECRET, { expiresIn: '1h' })
           });
         } else {
