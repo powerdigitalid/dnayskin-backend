@@ -1,7 +1,7 @@
 require("dotenv").config();
 const prisma = require("../utils/prisma");
 const jwt = require("jsonwebtoken");
-const {passwordGen, passwordCompare} = require("../utils/password");
+const { passwordGen, passwordCompare } = require("../utils/password");
 
 exports.register = (req, res) => {
   const { username, password } = req.body;
@@ -23,7 +23,7 @@ exports.register = (req, res) => {
           err.message || "Some error occurred while creating the User.",
       });
     }
-  );
+    );
 };
 
 exports.login = (req, res) => {
@@ -42,10 +42,8 @@ exports.login = (req, res) => {
         if (passwordCompare(password, data.password)) {
           return res.status(200).json({
             message: "Login successfully!",
-            data: {
-              username: data.username,
-            },
-            token: jwt.sign({ id: data.id }, process.env.SECRET, { expiresIn: '1h' })
+            data: { username: data.username, },
+            token: jwt.sign({ id: data.id, username: data.username }, process.env.SECRET, { expiresIn: '1h' })
           });
         } else {
           return res.status(401).json({
