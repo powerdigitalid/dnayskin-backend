@@ -12,8 +12,7 @@ exports.create = (req, res) => {
         message: "Banner created successfully!",
         data: data,
       });
-    })
-    .catch((err) => {
+    }).catch((err) => {
       res.status(500).send({
         message:
           err.message || "Some error occurred while creating the Banner.",

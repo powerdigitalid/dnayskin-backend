@@ -4,4 +4,4 @@ Backend for DnaySkin Project.
 
 ### TODO
 
-- [ ] Place all controllers in `controllers` folder
+- [x] Place all controllers in `controllers` folder
