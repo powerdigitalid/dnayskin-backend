@@ -4,4 +4,4 @@ Backend for DnaySkin Project.
 
 ### TODO
 
-- [ ] Create proper `routes`
+- [x] Create proper `routes`

@@ -25,7 +25,7 @@ router.post('/image', upload.single('image'), (req, res) => {
     } else {
       res.status(200).json({
         message: 'File uploaded successfully!',
-        data: req.file.filename,
+        data: '/api/v1/uploaded/' + req.file.filename,
       });
     }
   } catch (err) {
