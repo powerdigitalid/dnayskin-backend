@@ -173,7 +173,7 @@ const swaggerDefinition = {
         },
       },
     },
-    '/api/v1/banner/create': {
+    '/api/v1/banner/all': {
       get: {
         tags: ['Banner'],
         summary: 'Show all banners',
@@ -214,6 +214,38 @@ const swaggerDefinition = {
                           },
                         },
                       },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          404: {
+            description: 'Banner not found',
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    message: {
+                      type: 'string',
+                      example: 'No Banner found!',
+                    },
+                  },
+                },
+              },
+            },
+          },
+          500: {
+            description: 'Internal Server Error',
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    message: {
+                      type: 'string',
+                      example: 'Some error occurred while fetching the Banner.',
                     },
                   },
                 },

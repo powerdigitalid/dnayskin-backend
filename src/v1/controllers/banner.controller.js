@@ -17,24 +17,28 @@ exports.create = (req, res) => {
         message:
           err.message || "Some error occurred while creating the Banner.",
       });
-    }
-  );
+    });
 };
 exports.showAll = (req, res) => {
   prisma.banner.findMany()
     .then((data) => {
-      res.status(200).json({
-        message: "Banner fetched successfully!",
-        data: data,
-      });
+      if (data.length == 0) {
+        res.status(404).send({
+          message: "No Banner found!",
+        });
+      } else {
+        res.status(200).json({
+          message: "Banner fetched successfully!",
+          data: data,
+        });
+      }
     })
     .catch((err) => {
       res.status(500).send({
         message:
           err.message || "Some error occurred while fetching the Banner.",
       });
-    }
-  );
+    });
 };
 exports.update = (req, res) => {
   const { id } = req.params;
@@ -58,8 +62,7 @@ exports.update = (req, res) => {
         message:
           err.message || "Some error occurred while updating the Banner.",
       });
-    }
-  );
+    });
 };
 exports.delete = (req, res) => {
   const { id } = req.params;
@@ -79,6 +82,5 @@ exports.delete = (req, res) => {
         message:
           err.message || "Some error occurred while deleting the Banner.",
       });
-    }
-  );
+    });
 };
