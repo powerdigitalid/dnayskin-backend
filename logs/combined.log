@@ -514,3 +514,19 @@
 [35m[39m
 2023-02-13 20:06:25:625 [35mhttp[39m: [35m::1 GET /api/v1/docs/favicon-32x32.png 304 - - 0.610 ms[39m
 [35m[39m
+2023-02-14 09:26:26:2626 [35mhttp[39m: [35m::1 GET /api/v1/docs/ 304 - - 5.815 ms[39m
+[35m[39m
+2023-02-14 09:26:26:2626 [35mhttp[39m: [35m::1 GET /api/v1/docs/swagger-ui.css 304 - - 3.834 ms[39m
+[35m[39m
+2023-02-14 09:26:26:2626 [35mhttp[39m: [35m::1 GET /api/v1/docs/swagger-ui-bundle.js 304 - - 4.341 ms[39m
+[35m[39m
+2023-02-14 09:26:26:2626 [35mhttp[39m: [35m::1 GET /api/v1/docs/swagger-ui-init.js 200 8131 - 0.591 ms[39m
+[35m[39m
+2023-02-14 09:26:26:2626 [35mhttp[39m: [35m::1 GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - - 3.943 ms[39m
+[35m[39m
+2023-02-14 09:26:26:2626 [35mhttp[39m: [35m::1 GET /api/v1/docs/swagger-ui-init.js 200 8131 - 0.459 ms[39m
+[35m[39m
+2023-02-14 09:26:26:2626 [35mhttp[39m: [35m::1 GET /api/v1/docs/swagger-ui-bundle.js 304 - - 1.548 ms[39m
+[35m[39m
+2023-02-14 09:26:26:2626 [35mhttp[39m: [35m::1 GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - - 1.887 ms[39m
+[35m[39m

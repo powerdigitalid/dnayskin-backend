@@ -173,6 +173,56 @@ const swaggerDefinition = {
         },
       },
     },
+    '/api/v1/banner/create': {
+      get: {
+        tags: ['Banner'],
+        summary: 'Show all banners',
+        description: 'Show all banners',
+        operationId: 'createBanner',
+        responses: {
+          200: {
+            description: 'Show all banners',
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    message: {
+                      type: 'string',
+                      example: 'Banner fetched successfully!',
+                    },
+                    data: {
+                      type: 'array',
+                      items: {
+                        type: 'object',
+                        properties: {
+                          id: {
+                            type: 'string',
+                            example: '5f9f5b9b0b9b9b0b9b0b9b0b',
+                          },
+                          image_path: {
+                            type: 'string',
+                            example: 'https://dnayskin.com/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-19-at-10.02.05-AM.jpeg',
+                          },
+                          createdAt: {
+                            type: 'string',
+                            example: '2020-10-27T09:00:43.000Z',
+                          },
+                          updatedAt: {
+                            type: 'string',
+                            example: '2020-10-27T09:00:43.000Z',
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   },
 };
 const options = {
