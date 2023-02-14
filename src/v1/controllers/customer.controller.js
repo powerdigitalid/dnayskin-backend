@@ -50,7 +50,7 @@ exports.showById = (req, res) => {
   const { id } = req.params;
   prisma.customer.findUnique({
     where: {
-      id: parseInt(id),
+      id: id,
     },
   })
     .then((data) => {
@@ -78,7 +78,7 @@ exports.update = (req, res) => {
   const { cust_name, cust_phone, cust_address, cust_img } = req.body;
   prisma.customer.update({
     where: {
-      id: parseInt(id),
+      id: id,
     },
     data: {
       cust_name: cust_name,
@@ -105,11 +105,11 @@ exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.customer.delete({
     where: {
-      id: parseInt(id),
+      id: id,
     },
   })
     .then((data) => {
-      res.status(200).json({
+      res.status(204).json({
         message: "Customer deleted successfully!",
         data: data,
       });

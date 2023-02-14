@@ -26,6 +26,7 @@ exports.create = (req, res) => {
   });
 };
 exports.showAll = (req, res) => {
+  
   prisma.order.findMany()
     .then((data) => {
       res.status(200).json({

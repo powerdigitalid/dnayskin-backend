@@ -1,4 +1,4 @@
-const {passwordGen, passwordCompare} = require('../../src/v1/utils/password');
+const {passwordGen, passwordCompare} = require('../../../src/v1/utils/password');
 
 describe('passwordGen in password.js', () => { 
   it('should return a hash', () => {

@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const request = require('supertest');
-const app = require('../../src/v1/app');
+const app = require('../../../src/v1/app');
 
 beforeEach(async () => {
   await mongoose.set('strictQuery', true).connect(process.env.DATABASE_URL);
@@ -11,25 +11,28 @@ afterEach(async () => {
   await mongoose.connection.close();
 });
 
-describe('POST /api/v1/banner/create', () => {
+describe('POST /api/auth/register', () => {
   it('should return 201 and message', async () => {
     const res = await request(app)
-      .post('/api/v1/banner/create')
+      .post('/api/v1/auth/register')
       .send({
-        img_path: 'foo.jpg',
+        username: 'user1',
+        password: 'password1',
       });
     expect(res.statusCode).toEqual(201);
     expect(res.body).toHaveProperty('message');
-    expect(res.body).toHaveProperty('data');
   });
 });
 
-describe('GET /api/v1/banner/all', () => {
-  it('should return 200 and message', async () => {
+describe('POST /api/auth/login', () => {
+  it('should return 200 and token', async () => {
     const res = await request(app)
-      .get('/api/v1/banner/all');
+      .post('/api/v1/auth/login')
+      .send({
+        username: 'user1',
+        password: 'password1',
+      });
     expect(res.statusCode).toEqual(200);
-    expect(res.body).toHaveProperty('message');
-    expect(res.body).toHaveProperty('data');
+    expect(res.body).toHaveProperty('token');
   });
-})
+});
