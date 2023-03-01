@@ -560,3 +560,65 @@
 [35m[39m
 2023-02-14 19:22:35:2235 [35mhttp[39m: [35m::1 GET /api/v1/customer/63eb7c219a0b6eacbc2fc671 200 251 - 36.106 ms[39m
 [35m[39m
+2023-03-01 17:51:20:5120 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 404 33 - 57124.170 ms[39m
+[35m[39m
+2023-03-01 17:58:22:5822 [35mhttp[39m: [35m::1 POST /api/v1/customer/create 201 269 - 9190.586 ms[39m
+[35m[39m
+2023-03-01 17:58:47:5847 [35mhttp[39m: [35m::1 POST /api/v1/customer/create 201 271 - 111.319 ms[39m
+[35m[39m
+2023-03-01 17:58:56:5856 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 200 491 - 40.423 ms[39m
+[35m[39m
+2023-03-01 17:59:31:5931 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/63ff2fcca1eecdb157388f57 404 182 - 5.960 ms[39m
+[35m[39m
+2023-03-01 17:59:58:5958 [35mhttp[39m: [35m::1 GET /api/v1/customer/63ff2fcca1eecdb157388f57 200 269 - 75.828 ms[39m
+[35m[39m
+2023-03-01 18:28:32:2832 [35mhttp[39m: [35m::1 GET /api/v1/customer/63ff2fcca1eecdb157388f57 200 269 - 1782.246 ms[39m
+[35m[39m
+2023-03-01 18:29:33:2933 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/63ff2fcca1eecdb157388f57 204 - - 653.950 ms[39m
+[35m[39m
+2023-03-01 18:30:35:3035 [35mhttp[39m: [35m::1 GET /api/v1/customer/delete/63ff2fcca1eecdb157388f57 404 186 - 5.002 ms[39m
+[35m[39m
+2023-03-01 18:30:50:3050 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 200 273 - 86.448 ms[39m
+[35m[39m
+2023-03-01 18:33:07:337 [35mhttp[39m: [35m::1 POST /api/v1/customer/create 201 272 - 527.793 ms[39m
+[35m[39m
+2023-03-01 18:33:32:3332 [35mhttp[39m: [35m::1 POST /api/v1/customer/update/63ff37f32b677096212c856a 404 187 - 4.591 ms[39m
+[35m[39m
+2023-03-01 18:33:48:3348 [35mhttp[39m: [35m::1 PUT /api/v1/customer/update/63ff37f32b677096212c856a 200 269 - 263.093 ms[39m
+[35m[39m
+2023-03-01 18:35:13:3513 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 200 491 - 621.309 ms[39m
+[35m[39m
+2023-03-01 18:38:56:3856 [35mhttp[39m: [35m::1 POST /api/v1/product/create 500 882 - 137.782 ms[39m
+[35m[39m
+2023-03-01 18:39:33:3933 [35mhttp[39m: [35m::1 POST /api/v1/product/create 500 882 - 15.099 ms[39m
+[35m[39m
+2023-03-01 18:40:19:4019 [35mhttp[39m: [35m::1 POST /api/v1/product/create 500 882 - 12.057 ms[39m
+[35m[39m
+2023-03-01 18:40:42:4042 [35mhttp[39m: [35m::1 POST /api/v1/product/create 500 882 - 12.839 ms[39m
+[35m[39m
+2023-03-01 18:41:30:4130 [35mhttp[39m: [35m::1 GET /api/v1/product/all 404 32 - 65.429 ms[39m
+[35m[39m
+2023-03-01 18:41:45:4145 [35mhttp[39m: [35m::1 POST /api/v1/product/create 500 882 - 10.114 ms[39m
+[35m[39m
+2023-03-01 18:45:40:4540 [35mhttp[39m: [35m::1 POST /api/v1/product/create 201 276 - 3767.412 ms[39m
+[35m[39m
+2023-03-01 18:46:54:4654 [35mhttp[39m: [35m::1 GET /api/v1/product/all 200 278 - 1138.583 ms[39m
+[35m[39m
+2023-03-01 18:47:07:477 [35mhttp[39m: [35m::1 GET /api/v1/product/63ff3ae3e9206876844aa30b 500 479 - 105.316 ms[39m
+[35m[39m
+2023-03-01 18:47:32:4732 [35mhttp[39m: [35m::1 GET /api/v1/product/update/63ff3ae3e9206876844aa30b 404 185 - 14.228 ms[39m
+[35m[39m
+2023-03-01 18:47:37:4737 [35mhttp[39m: [35m::1 PUT /api/v1/product/update/63ff3ae3e9206876844aa30b 500 737 - 16.198 ms[39m
+[35m[39m
+2023-03-01 18:51:08:518 [35mhttp[39m: [35m::1 POST /api/v1/product/create 201 270 - 13193.025 ms[39m
+[35m[39m
+2023-03-01 18:51:18:5118 [35mhttp[39m: [35m::1 POST /api/v1/product/all 404 158 - 6.742 ms[39m
+[35m[39m
+2023-03-01 18:51:23:5123 [35mhttp[39m: [35m::1 GET /api/v1/product/all 200 498 - 104.528 ms[39m
+[35m[39m
+2023-03-01 18:53:44:5344 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/63ff3c2bba795306649c2d8f 500 478 - 64.032 ms[39m
+[35m[39m
+2023-03-01 18:55:21:5521 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/63ff3c2bba795306649c2d8f 500 478 - 11.952 ms[39m
+[35m[39m
+2023-03-01 18:55:58:5558 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/63ff3c2bba795306649c2d8f 500 478 - 1538.458 ms[39m
+[35m[39m

@@ -1,3 +1,4 @@
+
 const prisma = require("../utils/prisma");
 
 exports.create = (req, res) => {
@@ -10,6 +11,7 @@ exports.create = (req, res) => {
       cust_img: cust_img,
     },
   })
+
     .then((data) => {
       res.status(201).json({
         message: "Customer created successfully!",
@@ -101,6 +103,8 @@ exports.update = (req, res) => {
     }
   );
 };
+
+// controller delete
 exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.customer.delete({

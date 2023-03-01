@@ -15,8 +15,7 @@ exports.create = (req, res) => {
         message: "Product created successfully!",
         data: data,
       });
-    }
-    )
+    })
     .catch((err) => {
       res.status(500).send({
         message:
@@ -24,6 +23,7 @@ exports.create = (req, res) => {
       });
     });
 };
+
 exports.showAll = (req, res) => {
   prisma.product.findMany()
     .then((data) => {
@@ -45,6 +45,7 @@ exports.showAll = (req, res) => {
       });
     });
 };
+
 exports.showById = (req, res) => {
   const { id } = req.params;
   prisma.product.findUnique({
