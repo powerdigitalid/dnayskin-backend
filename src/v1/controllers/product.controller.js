@@ -77,7 +77,7 @@ exports.update = (req, res) => {
   const { product_name, product_price, product_img, product_desc } = req.body;
   prisma.product.update({
     where: {
-      id: parseInt(id),
+      id: id,
     },
     data: {
       product_name: product_name,
@@ -105,6 +105,7 @@ exports.update = (req, res) => {
       });
     });
 };
+
 exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.product.delete({
