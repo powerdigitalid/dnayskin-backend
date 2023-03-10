@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const appRoot = require('app-root-path');
+const validateToken = require('../middlewares/validateToken.middleware');
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
