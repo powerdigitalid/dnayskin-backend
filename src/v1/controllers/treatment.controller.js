@@ -108,7 +108,7 @@ exports.delete = (req, res) => {
   prisma.treatment
     .delete({
       where: {
-        id: parseInt(id),
+        id: (id),
       },
     })
     .then((data) => {

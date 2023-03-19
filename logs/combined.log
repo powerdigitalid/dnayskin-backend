@@ -672,3 +672,213 @@
 [35m[39m
 2023-03-02 20:49:44:4944 [35mhttp[39m: [35m::1 PUT /api/v1/customer/update/63ff37f32b677096212c856a 500 730 - 3905.480 ms[39m
 [35m[39m
+2023-03-19 12:50:42:5042 [35mhttp[39m: [35m::1 OPTIONS /api/v1/auth/login 204 0 - 91.588 ms[39m
+[35m[39m
+2023-03-19 12:50:45:5045 [35mhttp[39m: [35m::1 POST /api/v1/auth/login 200 268 - 2878.516 ms[39m
+[35m[39m
+2023-03-19 12:51:21:5121 [35mhttp[39m: [35m::1 OPTIONS /api/v1/banner/all 204 0 - 1.117 ms[39m
+[35m[39m
+2023-03-19 12:51:22:5122 [35mhttp[39m: [35m::1 GET /api/v1/banner/all - - - - ms[39m
+[35m[39m
+2023-03-19 12:51:30:5130 [35mhttp[39m: [35m::1 OPTIONS /api/v1/banner/all 204 0 - 15.984 ms[39m
+[35m[39m
+2023-03-19 12:51:30:5130 [35mhttp[39m: [35m::1 GET /api/v1/banner/all 404 30 - 30.480 ms[39m
+[35m[39m
+2023-03-19 12:52:07:527 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.452 ms[39m
+[35m[39m
+2023-03-19 12:52:07:527 [35mhttp[39m: [35m::1 GET /api/v1/product/all 200 1735 - 191.919 ms[39m
+[35m[39m
+2023-03-19 12:52:08:528 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.46.jpeg 404 205 - 379.377 ms[39m
+[35m[39m
+2023-03-19 12:52:08:528 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.45.jpeg 404 205 - 185.441 ms[39m
+[35m[39m
+2023-03-19 12:52:08:528 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.43.jpeg 404 205 - 186.021 ms[39m
+[35m[39m
+2023-03-19 12:52:08:528 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.47%20(1).jpeg 404 211 - 216.994 ms[39m
+[35m[39m
+2023-03-19 12:52:08:528 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44%20(1).jpeg 404 211 - 227.405 ms[39m
+[35m[39m
+2023-03-19 12:52:08:528 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44.jpeg 404 205 - 254.615 ms[39m
+[35m[39m
+2023-03-19 12:52:20:5220 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 35.783 ms[39m
+[35m[39m
+2023-03-19 12:52:21:5221 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 200 1318 - 55.573 ms[39m
+[35m[39m
+2023-03-19 12:52:31:5231 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 0.442 ms[39m
+[35m[39m
+2023-03-19 12:52:31:5231 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 304 - - 35.756 ms[39m
+[35m[39m
+2023-03-19 12:52:37:5237 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.364 ms[39m
+[35m[39m
+2023-03-19 12:52:37:5237 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 175.673 ms[39m
+[35m[39m
+2023-03-19 12:52:37:5237 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.46.jpeg 404 205 - 18.982 ms[39m
+[35m[39m
+2023-03-19 12:52:37:5237 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.45.jpeg 404 205 - 35.227 ms[39m
+[35m[39m
+2023-03-19 12:52:37:5237 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.43.jpeg 404 205 - 43.174 ms[39m
+[35m[39m
+2023-03-19 12:52:37:5237 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.47%20(1).jpeg 404 211 - 45.971 ms[39m
+[35m[39m
+2023-03-19 12:52:37:5237 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44.jpeg 404 205 - 44.446 ms[39m
+[35m[39m
+2023-03-19 12:52:37:5237 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44%20(1).jpeg 404 211 - 47.537 ms[39m
+[35m[39m
+2023-03-19 12:52:40:5240 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/640fb2d2c2372a382bda6b9a 204 0 - 0.316 ms[39m
+[35m[39m
+2023-03-19 12:52:40:5240 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/640fb2d2c2372a382bda6b9a 500 479 - 374.497 ms[39m
+[35m[39m
+2023-03-19 12:52:46:5246 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/640743203c0b7a15bccbcf21 204 0 - 0.291 ms[39m
+[35m[39m
+2023-03-19 12:52:46:5246 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/640743203c0b7a15bccbcf21 500 497 - 9.519 ms[39m
+[35m[39m
+2023-03-19 12:52:50:5250 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/6406beb459715008e8816f92 204 0 - 0.600 ms[39m
+[35m[39m
+2023-03-19 12:52:50:5250 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/6406beb459715008e8816f92 500 482 - 4.888 ms[39m
+[35m[39m
+2023-03-19 12:52:53:5253 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/6406aff859715008e8816f91 204 0 - 1.209 ms[39m
+[35m[39m
+2023-03-19 12:52:53:5253 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/6406aff859715008e8816f91 500 482 - 4.058 ms[39m
+[35m[39m
+2023-03-19 12:52:57:5257 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/6406aebe59715008e8816f90 204 0 - 0.404 ms[39m
+[35m[39m
+2023-03-19 12:52:57:5257 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/6406aebe59715008e8816f90 500 482 - 11.872 ms[39m
+[35m[39m
+2023-03-19 12:53:01:531 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/6406ac0f59715008e8816f8f 204 0 - 0.272 ms[39m
+[35m[39m
+2023-03-19 12:53:01:531 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/6406ac0f59715008e8816f8f 500 482 - 4.852 ms[39m
+[35m[39m
+2023-03-19 12:53:11:5311 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.307 ms[39m
+[35m[39m
+2023-03-19 12:53:11:5311 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 31.069 ms[39m
+[35m[39m
+2023-03-19 12:53:11:5311 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.46.jpeg 404 205 - 1.825 ms[39m
+[35m[39m
+2023-03-19 12:53:11:5311 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.45.jpeg 404 205 - 32.135 ms[39m
+[35m[39m
+2023-03-19 12:53:11:5311 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.43.jpeg 404 205 - 83.843 ms[39m
+[35m[39m
+2023-03-19 12:53:11:5311 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.47%20(1).jpeg 404 211 - 73.842 ms[39m
+[35m[39m
+2023-03-19 12:53:11:5311 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44%20(1).jpeg 404 211 - 19.506 ms[39m
+[35m[39m
+2023-03-19 12:53:12:5312 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44.jpeg 404 205 - 28.382 ms[39m
+[35m[39m
+2023-03-19 12:55:56:5556 [35mhttp[39m: [35m::1 POST /api/v1/upload/image 200 81 - 5758.102 ms[39m
+[35m[39m
+2023-03-19 12:56:20:5620 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/create 204 0 - 0.299 ms[39m
+[35m[39m
+2023-03-19 12:56:29:5629 [35mhttp[39m: [35m::1 POST /api/v1/product/create 201 297 - 9030.466 ms[39m
+[35m[39m
+2023-03-19 12:56:50:5650 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.415 ms[39m
+[35m[39m
+2023-03-19 12:56:50:5650 [35mhttp[39m: [35m::1 GET /api/v1/product/all 200 1982 - 66.695 ms[39m
+[35m[39m
+2023-03-19 12:56:51:5651 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.46.jpeg 404 205 - 163.909 ms[39m
+[35m[39m
+2023-03-19 12:56:51:5651 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.45.jpeg 404 205 - 186.604 ms[39m
+[35m[39m
+2023-03-19 12:56:51:5651 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.43.jpeg 404 205 - 192.979 ms[39m
+[35m[39m
+2023-03-19 12:56:51:5651 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.47%20(1).jpeg 404 211 - 205.635 ms[39m
+[35m[39m
+2023-03-19 12:56:51:5651 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44%20(1).jpeg 404 211 - 227.488 ms[39m
+[35m[39m
+2023-03-19 12:56:51:5651 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44.jpeg 404 205 - 144.874 ms[39m
+[35m[39m
+2023-03-19 12:56:52:5652 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 200 90482 - 666.322 ms[39m
+[35m[39m
+2023-03-19 12:58:29:5829 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/640743203c0b7a15bccbcf21 204 0 - 3.612 ms[39m
+[35m[39m
+2023-03-19 12:58:37:5837 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/640743203c0b7a15bccbcf21 200 343 - 8549.966 ms[39m
+[35m[39m
+2023-03-19 12:58:48:5848 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.817 ms[39m
+[35m[39m
+2023-03-19 12:58:48:5848 [35mhttp[39m: [35m::1 GET /api/v1/product/all 200 1689 - 552.677 ms[39m
+[35m[39m
+2023-03-19 12:58:49:5849 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.46.jpeg 404 205 - 17.757 ms[39m
+[35m[39m
+2023-03-19 12:58:49:5849 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.47%20(1).jpeg 404 211 - 33.226 ms[39m
+[35m[39m
+2023-03-19 12:58:49:5849 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.43.jpeg 404 205 - 61.891 ms[39m
+[35m[39m
+2023-03-19 12:58:49:5849 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 4.835 ms[39m
+[35m[39m
+2023-03-19 12:58:49:5849 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.45.jpeg 404 205 - 165.607 ms[39m
+[35m[39m
+2023-03-19 12:58:49:5849 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.44.jpeg 404 205 - 158.578 ms[39m
+[35m[39m
+2023-03-19 13:00:17:017 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/640fb2d2c2372a382bda6b9a 204 0 - 0.396 ms[39m
+[35m[39m
+2023-03-19 13:00:17:017 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/640fb2d2c2372a382bda6b9a 200 333 - 105.909 ms[39m
+[35m[39m
+2023-03-19 13:00:23:023 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/6406beb459715008e8816f92 204 0 - 0.291 ms[39m
+[35m[39m
+2023-03-19 13:00:23:023 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/6406beb459715008e8816f92 200 336 - 115.757 ms[39m
+[35m[39m
+2023-03-19 13:00:28:028 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/6406aff859715008e8816f91 204 0 - 0.294 ms[39m
+[35m[39m
+2023-03-19 13:00:29:029 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/6406aff859715008e8816f91 200 320 - 133.388 ms[39m
+[35m[39m
+2023-03-19 13:00:33:033 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/6406aebe59715008e8816f90 204 0 - 0.355 ms[39m
+[35m[39m
+2023-03-19 13:00:33:033 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/6406aebe59715008e8816f90 200 328 - 436.841 ms[39m
+[35m[39m
+2023-03-19 13:00:37:037 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/6406ac0f59715008e8816f8f 204 0 - 0.303 ms[39m
+[35m[39m
+2023-03-19 13:00:37:037 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/6406ac0f59715008e8816f8f 200 323 - 150.514 ms[39m
+[35m[39m
+2023-03-19 13:00:46:046 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.405 ms[39m
+[35m[39m
+2023-03-19 13:00:46:046 [35mhttp[39m: [35m::1 GET /api/v1/product/all 200 299 - 75.939 ms[39m
+[35m[39m
+2023-03-19 13:00:47:047 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 1.478 ms[39m
+[35m[39m
+2023-03-19 13:03:31:331 [35mhttp[39m: [35m::1 OPTIONS /api/v1/dashboard/counter/all 204 0 - 0.415 ms[39m
+[35m[39m
+2023-03-19 13:03:32:332 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 200 145 - 482.297 ms[39m
+[35m[39m
+2023-03-19 13:03:32:332 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 132.756 ms[39m
+[35m[39m
+2023-03-19 13:04:02:42 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 0.890 ms[39m
+[35m[39m
+2023-03-19 13:04:02:42 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 304 - - 49.399 ms[39m
+[35m[39m
+2023-03-19 13:04:07:47 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 0.387 ms[39m
+[35m[39m
+2023-03-19 13:04:08:48 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 183.485 ms[39m
+[35m[39m
+2023-03-19 13:04:20:420 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 0.331 ms[39m
+[35m[39m
+2023-03-19 13:04:21:421 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 304 - - 107.739 ms[39m
+[35m[39m
+2023-03-19 13:04:36:436 [35mhttp[39m: [35m::1 OPTIONS /api/v1/dashboard/counter/all 204 0 - 0.388 ms[39m
+[35m[39m
+2023-03-19 13:04:36:436 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 133.487 ms[39m
+[35m[39m
+2023-03-19 13:04:36:436 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 103.859 ms[39m
+[35m[39m
+2023-03-19 13:05:13:513 [35mhttp[39m: [35m::1 OPTIONS /api/v1/dashboard/counter/all 204 0 - 0.434 ms[39m
+[35m[39m
+2023-03-19 13:05:13:513 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 244.806 ms[39m
+[35m[39m
+2023-03-19 13:05:14:514 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 253.293 ms[39m
+[35m[39m
+2023-03-19 13:05:35:535 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.503 ms[39m
+[35m[39m
+2023-03-19 13:05:35:535 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 28.584 ms[39m
+[35m[39m
+2023-03-19 13:05:35:535 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 1.343 ms[39m
+[35m[39m
+2023-03-19 13:06:09:69 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 2.122 ms[39m
+[35m[39m
+2023-03-19 13:06:09:69 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 33.144 ms[39m
+[35m[39m
+2023-03-19 13:06:09:69 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 1.598 ms[39m
+[35m[39m
+2023-03-19 13:08:02:82 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.256 ms[39m
+[35m[39m
+2023-03-19 13:08:02:82 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 86.636 ms[39m
+[35m[39m
+2023-03-19 13:08:02:82 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 1.347 ms[39m
+[35m[39m

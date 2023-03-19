@@ -110,7 +110,7 @@ exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.product.delete({
     where: {
-      id: parseInt(id),
+      id: (id),
     },
   })
     .then((data) => {
