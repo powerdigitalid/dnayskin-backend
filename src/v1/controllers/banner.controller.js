@@ -1,9 +1,11 @@
 const prisma = require("../utils/prisma");
 
 exports.create = (req, res) => {
-  const { img_path } = req.body;
+  const { text_header, text_desc, img_path } = req.body;
   prisma.banner.create({
     data: {
+      text_header: text_header,
+      text_desc: text_desc,
       image_path: img_path,
     },
   })
@@ -13,6 +15,32 @@ exports.create = (req, res) => {
         data: data,
       });
     }).catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while creating the Banner.",
+      });
+    });
+};
+exports.showById = (req, res) => {
+  const { id } = req.params;
+  prisma.banner.findUnique({
+    where: {
+      id: id,
+    },
+  })
+    .then((data) => {
+      if (data == null) {
+        res.status(404).send({
+          message: "No Banner found!",
+        });
+      } else {
+        res.status(200).json({
+          message: "Banner fetched successfully!",
+          data: data,
+        });
+      }
+    })
+    .catch((err) => {
       res.status(500).send({
         message:
           err.message || "Some error occurred while creating the Banner.",
@@ -42,12 +70,14 @@ exports.showAll = (req, res) => {
 };
 exports.update = (req, res) => {
   const { id } = req.params;
-  const { img_path } = req.body;
+  const { text_header, text_desc, img_path } = req.body;
   prisma.banner.update({
     where: {
-      id: parseInt(id),
+      id: id,
     },
     data: {
+      text_header: text_header,
+      text_desc: text_desc,
       image_path: img_path,
     },
   })
@@ -68,7 +98,7 @@ exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.banner.delete({
     where: {
-      id: parseInt(id),
+      id: id,
     },
   })
     .then((data) => {
