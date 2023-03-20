@@ -2,9 +2,9 @@
 
 Backend for DnaySkin Project.
 
-### TODO
+## TODO
 
 - [x] Place all controllers in `controllers` folder
 - [x] Dashboard controller (counter for customer, product, treatment, current reservation)
-- [ ] Enable JWT 
+- [ ] Enable JWT
 - [x] Banner can be update, delete, and get by Id

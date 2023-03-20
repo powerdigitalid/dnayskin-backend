@@ -42,7 +42,7 @@ exports.login = (req, res) => {
         if (passwordCompare(password, data.password)) {
           return res.status(200).json({
             message: "Login successfully!",
-            data: { username: data.username, },
+            data: { id: data.id, username: data.username, },
             token: jwt.sign({ id: data.id, username: data.username }, process.env.SECRET, { expiresIn: '1h' })
           });
         } else {

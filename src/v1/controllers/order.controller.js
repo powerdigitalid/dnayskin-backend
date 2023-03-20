@@ -21,7 +21,7 @@ exports.create = (req, res) => {
   }).catch((err) => {
     res.status(500).send({
       message:
-        err.message || "Some error occurred while deleting the Banner.",
+        err.message || "Some error occurred while deleting the Order.",
     });
   });
 };
@@ -38,7 +38,7 @@ exports.showAll = (req, res) => {
     .catch((err) => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while fetching the Banner.",
+          err.message || "Some error occurred while fetching the Order.",
       });
     });
 };
@@ -57,7 +57,7 @@ exports.showById = (req, res) => {
   }).catch((err) => {
     res.status(500).send({
       message:
-        err.message || "Some error occurred while fetching the Banner.",
+        err.message || "Some error occurred while fetching the Order.",
     });
   });
 };
@@ -86,7 +86,7 @@ exports.update = (req, res) => {
   }).catch((err) => {
     res.status(500).send({
       message:
-        err.message || "Some error occurred while updating the Banner.",
+        err.message || "Some error occurred while updating the Order.",
     });
   });
 };
@@ -105,7 +105,7 @@ exports.delete = (req, res) => {
   }).catch((err) => {
     res.status(500).send({
       message:
-        err.message || "Some error occurred while deleting the Banner.",
+        err.message || "Some error occurred while deleting the Order.",
     });
   });
 };
