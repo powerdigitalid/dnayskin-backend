@@ -53514,3 +53514,237 @@
 [35m[39m
 2023-03-20 13:04:24:424 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 116.424 ms[39m
 [35m[39m
+2023-03-21 10:22:20:2220 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 2.841 ms[39m
+[35m[39m
+2023-03-21 10:22:22:2222 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 2105.893 ms[39m
+[35m[39m
+2023-03-21 10:22:24:2224 [35mhttp[39m: [35m::1 OPTIONS /api/v1/auth/login 204 0 - 1.245 ms[39m
+[35m[39m
+2023-03-21 10:22:25:2225 [35mhttp[39m: [35m::1 POST /api/v1/auth/login 200 300 - 1059.853 ms[39m
+[35m[39m
+2023-03-21 10:22:31:2231 [35mhttp[39m: [35m::1 OPTIONS /api/v1/dashboard/counter/all 204 0 - 0.757 ms[39m
+[35m[39m
+2023-03-21 10:22:33:2233 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 1484.315 ms[39m
+[35m[39m
+2023-03-21 10:22:33:2233 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 450.854 ms[39m
+[35m[39m
+2023-03-21 10:22:52:2252 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.413 ms[39m
+[35m[39m
+2023-03-21 10:22:52:2252 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 31.223 ms[39m
+[35m[39m
+2023-03-21 10:22:52:2252 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss1.jpeg 404 169 - 76.427 ms[39m
+[35m[39m
+2023-03-21 10:22:52:2252 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 200 90482 - 154.618 ms[39m
+[35m[39m
+2023-03-21 10:24:24:2424 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.318 ms[39m
+[35m[39m
+2023-03-21 10:24:25:2425 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 47.560 ms[39m
+[35m[39m
+2023-03-21 10:24:37:2437 [35mhttp[39m: [35m::1 OPTIONS /api/v1//product/delete/641794bc905114a71b085621 204 0 - 0.263 ms[39m
+[35m[39m
+2023-03-21 10:24:37:2437 [35mhttp[39m: [35m::1 DELETE /api/v1//product/delete/641794bc905114a71b085621 404 189 - 12.137 ms[39m
+[35m[39m
+2023-03-21 10:24:55:2455 [35mhttp[39m: [35m::1 OPTIONS /api/v1//product/delete/641794bc905114a71b085621 204 0 - 0.327 ms[39m
+[35m[39m
+2023-03-21 10:24:55:2455 [35mhttp[39m: [35m::1 DELETE /api/v1//product/delete/641794bc905114a71b085621 404 189 - 3.315 ms[39m
+[35m[39m
+2023-03-21 10:25:41:2541 [35mhttp[39m: [35m::1 OPTIONS /api/v1//product/delete/6416a4098af0b46ea34c63b4 204 0 - 0.298 ms[39m
+[35m[39m
+2023-03-21 10:25:41:2541 [35mhttp[39m: [35m::1 DELETE /api/v1//product/delete/6416a4098af0b46ea34c63b4 404 189 - 0.976 ms[39m
+[35m[39m
+2023-03-21 10:56:42:5642 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.487 ms[39m
+[35m[39m
+2023-03-21 10:56:48:5648 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 5364.792 ms[39m
+[35m[39m
+2023-03-21 10:56:50:5650 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 704.074 ms[39m
+[35m[39m
+2023-03-21 10:56:50:5650 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss1.jpeg 404 169 - 2418.850 ms[39m
+[35m[39m
+2023-03-21 10:59:31:5931 [35mhttp[39m: [35m::1 POST /api/v1//upload/image 404 160 - 822.691 ms[39m
+[35m[39m
+2023-03-21 11:00:40:040 [35mhttp[39m: [35m::1 OPTIONS /api/v1//product/all 204 0 - 174.430 ms[39m
+[35m[39m
+2023-03-21 11:00:40:040 [35mhttp[39m: [35m::1 GET /api/v1//product/all 404 158 - 0.819 ms[39m
+[35m[39m
+2023-03-21 11:01:08:18 [35mhttp[39m: [35m::1 OPTIONS /api/v1//product/all 204 0 - 121.259 ms[39m
+[35m[39m
+2023-03-21 11:01:11:111 [35mhttp[39m: [35m::1 GET /api/v1//product/all 404 158 - 0.831 ms[39m
+[35m[39m
+2023-03-21 11:01:31:131 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.489 ms[39m
+[35m[39m
+2023-03-21 11:01:32:132 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 656.218 ms[39m
+[35m[39m
+2023-03-21 11:01:32:132 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss1.jpeg 404 169 - 83.972 ms[39m
+[35m[39m
+2023-03-21 11:01:32:132 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 95.221 ms[39m
+[35m[39m
+2023-03-21 11:01:54:154 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.494 ms[39m
+[35m[39m
+2023-03-21 11:01:55:155 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 592.076 ms[39m
+[35m[39m
+2023-03-21 11:02:58:258 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 343.670 ms[39m
+[35m[39m
+2023-03-21 11:02:58:258 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 219.606 ms[39m
+[35m[39m
+2023-03-21 11:02:59:259 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss1.jpeg 404 169 - 466.323 ms[39m
+[35m[39m
+2023-03-21 11:02:59:259 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 24.990 ms[39m
+[35m[39m
+2023-03-21 11:03:40:340 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/delete/641794bc905114a71b085621 204 0 - 0.369 ms[39m
+[35m[39m
+2023-03-21 11:03:52:352 [35mhttp[39m: [35m::1 DELETE /api/v1/product/delete/641794bc905114a71b085621 200 290 - 11745.342 ms[39m
+[35m[39m
+2023-03-21 11:04:16:416 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.384 ms[39m
+[35m[39m
+2023-03-21 11:04:17:417 [35mhttp[39m: [35m::1 GET /api/v1/product/all 200 299 - 225.630 ms[39m
+[35m[39m
+2023-03-21 11:04:21:421 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 2.073 ms[39m
+[35m[39m
+2023-03-21 11:06:40:640 [35mhttp[39m: [35m::1 POST /api/v1/upload/image 200 110 - 4513.075 ms[39m
+[35m[39m
+2023-03-21 11:07:05:75 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/create 204 0 - 0.382 ms[39m
+[35m[39m
+2023-03-21 11:07:11:711 [35mhttp[39m: [35m::1 POST /api/v1/product/create 201 311 - 5420.261 ms[39m
+[35m[39m
+2023-03-21 11:08:10:810 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 0.318 ms[39m
+[35m[39m
+2023-03-21 11:08:14:814 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 304 - - 3160.422 ms[39m
+[35m[39m
+2023-03-21 13:23:42:2342 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.545 ms[39m
+[35m[39m
+2023-03-21 13:23:51:2351 [35mhttp[39m: [35m::1 GET /api/v1/product/all 200 560 - 9615.847 ms[39m
+[35m[39m
+2023-03-21 13:23:52:2352 [35mhttp[39m: [35m::1 OPTIONS /api/v1/auth/login 204 0 - 0.301 ms[39m
+[35m[39m
+2023-03-21 13:23:53:2353 [35mhttp[39m: [35m::1 POST /api/v1/auth/login 200 300 - 949.399 ms[39m
+[35m[39m
+2023-03-21 13:23:59:2359 [35mhttp[39m: [35m::1 OPTIONS /api/v1/dashboard/counter/all 204 0 - 0.419 ms[39m
+[35m[39m
+2023-03-21 13:24:00:240 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 1538.939 ms[39m
+[35m[39m
+2023-03-21 13:24:02:242 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 1426.909 ms[39m
+[35m[39m
+2023-03-21 13:24:04:244 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.620 ms[39m
+[35m[39m
+2023-03-21 13:24:04:244 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 100.860 ms[39m
+[35m[39m
+2023-03-21 13:24:04:244 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 62.357 ms[39m
+[35m[39m
+2023-03-21 13:24:04:244 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.43.jpeg 200 69155 - 66.233 ms[39m
+[35m[39m
+2023-03-21 13:27:57:2757 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.720 ms[39m
+[35m[39m
+2023-03-21 13:27:59:2759 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 385.000 ms[39m
+[35m[39m
+2023-03-21 13:27:59:2759 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 3.901 ms[39m
+[35m[39m
+2023-03-21 13:27:59:2759 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.43.jpeg 304 - - 254.226 ms[39m
+[35m[39m
+2023-03-21 13:28:51:2851 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.397 ms[39m
+[35m[39m
+2023-03-21 13:28:52:2852 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 1005.343 ms[39m
+[35m[39m
+2023-03-21 13:28:55:2855 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/produkss.jpeg 304 - - 94.974 ms[39m
+[35m[39m
+2023-03-21 13:28:55:2855 [35mhttp[39m: [35m::1 GET /api/v1/uploaded/WhatsApp%20Image%202023-02-27%20at%2013.29.43.jpeg 304 - - 133.433 ms[39m
+[35m[39m
+2023-03-21 14:13:40:1340 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all/undefined 204 0 - 59.538 ms[39m
+[35m[39m
+2023-03-21 14:13:41:1341 [35mhttp[39m: [35m::1 GET /api/v1/product/all/undefined 404 167 - 254.842 ms[39m
+[35m[39m
+2023-03-21 14:14:25:1425 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 1.063 ms[39m
+[35m[39m
+2023-03-21 14:14:34:1434 [35mhttp[39m: [35m::1 GET /api/v1/product/all 304 - - 8541.254 ms[39m
+[35m[39m
+2023-03-21 14:15:19:1519 [35mhttp[39m: [35m::1 OPTIONS /api/v1/productundefined 204 0 - 0.456 ms[39m
+[35m[39m
+2023-03-21 14:15:19:1519 [35mhttp[39m: [35m::1 GET /api/v1/productundefined 404 162 - 1.090 ms[39m
+[35m[39m
+2023-03-21 14:15:47:1547 [35mhttp[39m: [35m::1 OPTIONS /api/v1/productundefined 204 0 - 0.402 ms[39m
+[35m[39m
+2023-03-21 14:15:47:1547 [35mhttp[39m: [35m::1 GET /api/v1/productundefined 404 162 - 22.275 ms[39m
+[35m[39m
+2023-03-21 14:16:14:1614 [35mhttp[39m: [35m::1 OPTIONS /api/v1/productundefined 204 0 - 0.265 ms[39m
+[35m[39m
+2023-03-21 14:16:14:1614 [35mhttp[39m: [35m::1 GET /api/v1/productundefined 404 162 - 1.113 ms[39m
+[35m[39m
+2023-03-21 14:17:35:1735 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 0.297 ms[39m
+[35m[39m
+2023-03-21 14:17:43:1743 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 304 - - 7296.001 ms[39m
+[35m[39m
+2023-03-21 14:18:25:1825 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/deleteundefined 204 0 - 0.421 ms[39m
+[35m[39m
+2023-03-21 14:18:26:1826 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/deleteundefined 404 173 - 379.814 ms[39m
+[35m[39m
+2023-03-21 14:19:04:194 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 0.335 ms[39m
+[35m[39m
+2023-03-21 14:19:10:1910 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 304 - - 5850.669 ms[39m
+[35m[39m
+2023-03-21 14:24:27:2427 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 0.375 ms[39m
+[35m[39m
+2023-03-21 14:25:38:2538 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 69121.614 ms[39m
+[35m[39m
+2023-03-21 14:25:44:2544 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 0.310 ms[39m
+[35m[39m
+2023-03-21 14:25:44:2544 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 0.418 ms[39m
+[35m[39m
+2023-03-21 14:25:44:2544 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 0.280 ms[39m
+[35m[39m
+2023-03-21 14:25:44:2544 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 0.500 ms[39m
+[35m[39m
+2023-03-21 14:25:44:2544 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 1.191 ms[39m
+[35m[39m
+2023-03-21 14:25:46:2546 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 0.368 ms[39m
+[35m[39m
+2023-03-21 14:25:47:2547 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 92.364 ms[39m
+[35m[39m
+2023-03-21 14:25:48:2548 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 1181.397 ms[39m
+[35m[39m
+2023-03-21 14:25:48:2548 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 1358.719 ms[39m
+[35m[39m
+2023-03-21 14:25:48:2548 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 1600.881 ms[39m
+[35m[39m
+2023-03-21 14:25:48:2548 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 1581.366 ms[39m
+[35m[39m
+2023-03-21 14:25:48:2548 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 1123.297 ms[39m
+[35m[39m
+2023-03-21 14:25:49:2549 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 642.342 ms[39m
+[35m[39m
+2023-03-21 14:25:49:2549 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 244.254 ms[39m
+[35m[39m
+2023-03-21 14:29:35:2935 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 61.153 ms[39m
+[35m[39m
+2023-03-21 14:29:42:2942 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 304 - - 7319.104 ms[39m
+[35m[39m
+2023-03-21 14:30:38:3038 [35mhttp[39m: [35m::1 OPTIONS /api/v1/auth/login 204 0 - 0.428 ms[39m
+[35m[39m
+2023-03-21 14:31:02:312 [35mhttp[39m: [35m::1 POST /api/v1/auth/login 200 300 - 23901.631 ms[39m
+[35m[39m
+2023-03-21 14:31:12:3112 [35mhttp[39m: [35m::1 OPTIONS /api/v1/dashboard/counter/all 204 0 - 0.995 ms[39m
+[35m[39m
+2023-03-21 14:31:17:3117 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 4717.108 ms[39m
+[35m[39m
+2023-03-21 14:31:19:3119 [35mhttp[39m: [35m::1 OPTIONS /api/v1/dashboard/counter/all 204 0 - 0.307 ms[39m
+[35m[39m
+2023-03-21 14:31:19:3119 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 304 - - 126.231 ms[39m
+[35m[39m
+2023-03-21 14:31:35:3135 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/all 204 0 - 0.427 ms[39m
+[35m[39m
+2023-03-21 14:31:36:3136 [35mhttp[39m: [35m::1 GET /api/v1/customer/all 304 - - 257.747 ms[39m
+[35m[39m
+2023-03-21 14:31:54:3154 [35mhttp[39m: [35m::1 OPTIONS /api/v1/customer/delete/undefined 204 0 - 0.398 ms[39m
+[35m[39m
+2023-03-21 14:31:55:3155 [35mhttp[39m: [35m::1 DELETE /api/v1/customer/delete/undefined 500 459 - 118.606 ms[39m
+[35m[39m
+2023-03-21 15:04:10:410 [35mhttp[39m: [35m::1 OPTIONS /api/v1/dashboard/counter/all 204 0 - 34.069 ms[39m
+[35m[39m
+2023-03-21 15:04:35:435 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.365 ms[39m
+[35m[39m
+2023-03-21 15:04:41:441 [35mhttp[39m: [35m::1 GET /api/v1/dashboard/counter/all 500 452 - 30751.414 ms[39m
+[35m[39m
+2023-03-21 15:05:06:56 [35mhttp[39m: [35m::1 GET /api/v1/product/all 500 1813 - 30527.900 ms[39m
+[35m[39m
+2023-03-21 15:05:37:537 [35mhttp[39m: [35m::1 OPTIONS /api/v1/product/all 204 0 - 0.500 ms[39m
+[35m[39m
+2023-03-21 15:06:08:68 [35mhttp[39m: [35m::1 GET /api/v1/product/all 500 1815 - 30007.241 ms[39m
+[35m[39m
