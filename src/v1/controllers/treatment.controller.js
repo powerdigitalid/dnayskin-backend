@@ -52,7 +52,7 @@ exports.showById = (req, res) => {
   prisma.treatment
     .findUnique({
       where: {
-        id: parseInt(id),
+        id: id,
       },
     })
     .then((data) => {
@@ -108,7 +108,7 @@ exports.delete = (req, res) => {
   prisma.treatment
     .delete({
       where: {
-        id: (id),
+        id: id,
       },
     })
     .then((data) => {

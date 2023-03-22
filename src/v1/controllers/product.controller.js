@@ -50,7 +50,7 @@ exports.showById = (req, res) => {
   const { id } = req.params;
   prisma.product.findUnique({
     where: {
-      id: parseInt(id),
+      id: id,
     },
   })
     .then((data) => {
@@ -110,7 +110,7 @@ exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.product.delete({
     where: {
-      id: (id),
+      id: id,
     },
   })
     .then((data) => {

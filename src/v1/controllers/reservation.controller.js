@@ -50,7 +50,7 @@ exports.showById = (req, res) => {
   const { id } = req.params;
   prisma.reservation.findUnique({
     where: {
-      id: parseInt(id),
+      id: id,
     },
   })
     .then((data) => {
@@ -77,7 +77,7 @@ exports.update = (req, res) => {
   const { reservation_date, reservation_time, reservation_note, reservation_status, user_id, customer_id } = req.body;
   prisma.reservation.update({
     where: {
-      id: parseInt(id),
+      id: id,
     },
     data: {
       reservation_date: reservation_date,
@@ -111,7 +111,7 @@ exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.reservation.delete({
     where: {
-      id: parseInt(id),
+      id: id,
     },
   })
     .then((data) => {

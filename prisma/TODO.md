@@ -5,4 +5,4 @@ Backend for DnaySkin Project.
 ### TODO
 
 - [x] Add db schema
-- [ ] Add db seeder
+- [x] Add db seeder

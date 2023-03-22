@@ -1,7 +1,7 @@
 const prisma = require('../utils/prisma');
 
 exports.create = (req, res) => {
-  const { order_detail, order_date, order_desc, order_total, order_payment, userId, customerId } = req.body;
+  const { order_detail, order_date, order_desc, order_total, order_payment, anamnesa, diagnosa, terapi, userId, customerId } = req.body;
   prisma.order.create({
     data: {
       order_detail: order_detail,
@@ -9,6 +9,9 @@ exports.create = (req, res) => {
       order_desc: order_desc,
       order_total: order_total,
       order_payment: order_payment,
+      anamnesa: anamnesa,
+      diagnosa: diagnosa,
+      terapi: terapi,
       userId: userId,
       customerId: customerId
     }
@@ -46,7 +49,7 @@ exports.showById = (req, res) => {
   const { id } = req.params;
   prisma.order.findUnique({
     where: {
-      id: parseInt(id)
+      id: id
     }
   }).then((data) => {
     res.status(200).json({
@@ -63,10 +66,10 @@ exports.showById = (req, res) => {
 };
 exports.update = (req, res) => {
   const { id } = req.params;
-  const { order_detail, order_date, order_desc, order_total, order_payment, userId, customerId } = req.body;
+  const { order_detail, order_date, order_desc, order_total, order_payment, anamnesa, diagnosa, terapi, userId, customerId } = req.body;
   prisma.order.update({
     where: {
-      id: parseInt(id)
+      id: id
     },
     data: {
       order_detail: order_detail,
@@ -74,6 +77,9 @@ exports.update = (req, res) => {
       order_desc: order_desc,
       order_total: order_total,
       order_payment: order_payment,
+      anamnesa: anamnesa,
+      diagnosa: diagnosa,
+      terapi: terapi,
       userId: userId,
       customerId: customerId
     }
@@ -94,7 +100,7 @@ exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.order.delete({
     where: {
-      id: parseInt(id)
+      id: id
     }
   }).then((data) => {
     res.status(200).json({
