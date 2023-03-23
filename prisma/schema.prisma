@@ -91,12 +91,16 @@ model Order {
   userId        String        @db.ObjectId
   customer      Customer      @relation(fields: [customerId], references: [id])
   customerId    String        @db.ObjectId
+  customerName  String?
+  officeId      String?
 }
 
 type OrderDetail {
-  orderId     String? @db.ObjectId
-  treatmentId String? @db.ObjectId
-  productId   String? @db.ObjectId
-  quantity    Int
-  price       Int
+  orderId      String? @db.ObjectId
+  treatmentId  String? @db.ObjectId
+  productId    String? @db.ObjectId
+  treatment    String?
+  product_name String?
+  quantity     Int
+  price        Int
 }

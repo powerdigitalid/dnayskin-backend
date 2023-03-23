@@ -1,11 +1,11 @@
 const prisma = require('../utils/prisma');
 
 exports.create = (req, res) => {
-  const { order_detail, order_date, order_desc, order_total, order_payment, anamnesa, diagnosa, terapi, userId, customerId } = req.body;
+  const { order_detail, order_date, order_desc, order_total, order_payment, anamnesa, diagnosa, terapi, userId, customerId, officeId, customerName } = req.body;
   prisma.order.create({
     data: {
       order_detail: order_detail,
-      order_date: order_date,
+      order_date: new Date(Date.parse(order_date)),
       order_desc: order_desc,
       order_total: order_total,
       order_payment: order_payment,
@@ -13,7 +13,9 @@ exports.create = (req, res) => {
       diagnosa: diagnosa,
       terapi: terapi,
       userId: userId,
-      customerId: customerId
+      customerId: customerId,
+      customerName: customerName,
+      officeId: officeId
     }
   }).then((data) => {
     res.status(200).json({
@@ -29,7 +31,6 @@ exports.create = (req, res) => {
   });
 };
 exports.showAll = (req, res) => {
-  
   prisma.order.findMany()
     .then((data) => {
       res.status(200).json({
