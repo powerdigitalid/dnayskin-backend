@@ -1,15 +1,17 @@
 const prisma = require("../utils/prisma");
 
 exports.create = (req, res) => {
-  const { reservation_date, reservation_time, reservation_note, reservation_status, user_id, customer_id } = req.body;
+  const { reservation_date, reservation_time, reservation_note, reservation_status, userId, customerId, officeId, customerName } = req.body;
   prisma.reservation.create({
     data: {
-      reservation_date: reservation_date,
+      reservation_date: new Date(Date.parse(reservation_date)),
       reservation_time: reservation_time,
       reservation_note: reservation_note,
       reservation_status: reservation_status,
-      userId: user_id,
-      customerId: customer_id,
+      userId: userId,
+      customerId: customerId,
+      officeId: officeId,
+      customerName: customerName,
     },
   })
     .then((data) => {
@@ -19,7 +21,7 @@ exports.create = (req, res) => {
       });
     })
     .catch((err) => {
-      res.status(500).send({
+      res.status(200).send({
         message:
           err.message || "Some error occurred while creating the Reservation.",
       });

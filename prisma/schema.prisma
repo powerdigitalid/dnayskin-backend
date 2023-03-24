@@ -73,6 +73,8 @@ model Reservation {
   userId             String   @db.ObjectId
   customer           Customer @relation(fields: [customerId], references: [id])
   customerId         String   @db.ObjectId
+  officeId           String?
+  customerName       String?
 }
 
 model Order {

@@ -8,7 +8,7 @@ exports.show = async (req, res) => {
     const treatmentCount = await prisma.treatment.count();
     const currentReservations = await prisma.reservation.count({
       where: {
-        reservation_status: "active",
+        reservation_status: "pending",
       },
     });
     switch (type) {
