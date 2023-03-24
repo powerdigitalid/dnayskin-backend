@@ -8,6 +8,7 @@ router.get('/all', validateToken, reservationController.showAll);
 router.get('/:id', validateToken, reservationController.showById);
 router.post('/create', validateToken, reservationController.create);
 router.put('/update/:id', validateToken, reservationController.update);
+router.patch('/confirm/:id', validateToken, reservationController.confirm);
 router.delete('/delete/:id', validateToken, reservationController.delete);
 
 module.exports = router;

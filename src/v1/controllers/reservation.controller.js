@@ -74,20 +74,52 @@ exports.showById = (req, res) => {
       });
     });
 };
-exports.update = (req, res) => {
+exports.confirm = (req, res) => {
   const { id } = req.params;
-  const { reservation_date, reservation_time, reservation_note, reservation_status, user_id, customer_id } = req.body;
+  const { reservation_status } = req.body;
   prisma.reservation.update({
     where: {
       id: id,
     },
     data: {
-      reservation_date: reservation_date,
+      reservation_status: "confirmed",
+    },
+  })
+    .then((data) => {
+      if (data === null) {
+        res.status(404).json({
+          message: "Reservation not found!",
+        });
+      } else {
+        res.status(200).json({
+          message: "Reservation confirmed successfully!",
+          data: data,
+        });
+      }
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while confirming the Reservation.",
+      });
+    });
+};
+exports.update = (req, res) => {
+  const { id } = req.params;
+  const { reservation_date, reservation_time, reservation_note, reservation_status, userId, customerId, officeId, customerName } = req.body;
+  prisma.reservation.update({
+    where: {
+      id: id,
+    },
+    data: {
+      reservation_date: new Date(Date.parse(reservation_date)),
       reservation_time: reservation_time,
       reservation_note: reservation_note,
       reservation_status: reservation_status,
-      userId: user_id,
-      customerId: customer_id,
+      userId: userId,
+      customerId: customerId,
+      officeId: officeId,
+      customerName: customerName,
     },
   })
     .then((data) => {
