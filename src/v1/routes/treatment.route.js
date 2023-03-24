@@ -5,6 +5,7 @@ const treatmentController = require('../controllers/treatment.controller');
 const validateToken = require('../middlewares/validateToken.middleware');
 
 router.get('/all', validateToken, treatmentController.showAll);
+router.get('/landingg',  treatmentController.showAll);
 router.get('/:id', validateToken, treatmentController.showById);
 router.post('/create', validateToken, treatmentController.create);
 router.put('/update/:id', validateToken, treatmentController.update);
