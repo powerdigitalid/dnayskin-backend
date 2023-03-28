@@ -98,11 +98,11 @@ model Order {
 }
 
 type OrderDetail {
-  orderId      String? @db.ObjectId
-  treatmentId  String? @db.ObjectId
-  productId    String? @db.ObjectId
-  treatment    String?
-  product_name String?
-  quantity     Int
-  price        Int
+  orderId        String? @db.ObjectId
+  treatmentId    String? @db.ObjectId
+  productId      String? @db.ObjectId
+  treatment_name String?
+  product_name   String?
+  quantity       Int
+  price          Int
 }
