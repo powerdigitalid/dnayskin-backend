@@ -3,7 +3,7 @@ const app = require('./app');
 const port = process.env.PORT || 3000;
 require('dotenv').config();
 
-mongoose.set('strictQuery', true).connect(process.env.DATABASE_URL)
+mongoose.set('strictQuery', true).connect(process.env.DATABASE_URL, {family: 4, useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
     console.info(`[${process.env.NODE_ENV}] Connected to database`);
     app.listen(port, () => {

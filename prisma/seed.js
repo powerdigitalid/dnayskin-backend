@@ -18,7 +18,6 @@ async function main() {
         password: passwordGen('carol'),
       }
     ],
-    skipDuplicates: true,
   })
   console.log({ users })
 }
