@@ -1,5 +1,5 @@
 require('dotenv').config();
-const appRoot = require('app-root-path');
+const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const express = require('express');
@@ -27,6 +27,6 @@ app.use('/api/v1/order', require('./routes/order.route'));
 app.use('/api/v1/reservation', require('./routes/reservation.route'));
 app.use('/api/v1/treatment', require('./routes/treatment.route'));
 app.use('/api/v1/upload', require('./routes/upload.route'));
-app.use('/api/v1/uploaded', express.static(appRoot + '/uploads'));
+app.use('/api/v1/uploaded', express.static(path.join(__dirname, '/../../uploads')));
 
 module.exports = app;
