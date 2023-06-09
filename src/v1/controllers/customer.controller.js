@@ -1,17 +1,18 @@
 
+const generateId = require("../utils/idgenerator");
 const prisma = require("../utils/prisma");
 
-exports.create = (req, res) => {
+exports.create = async (req, res) => {
   const { cust_name, cust_phone, cust_address, cust_img } = req.body;
   prisma.customer.create({
     data: {
+      cust_id: await generateId(cust_name),
       cust_name: cust_name,
       cust_phone: cust_phone,
       cust_address: cust_address,
       cust_img: cust_img,
     },
   })
-
     .then((data) => {
       res.status(201).json({
         message: "Customer created successfully!",
@@ -103,8 +104,6 @@ exports.update = (req, res) => {
     }
   );
 };
-
-// controller delete
 exports.delete = (req, res) => {
   const { id } = req.params;
   prisma.customer.delete({

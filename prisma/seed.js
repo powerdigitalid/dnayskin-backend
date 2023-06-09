@@ -16,6 +16,10 @@ async function main() {
       {
         username: 'carol',
         password: passwordGen('carol'),
+      },
+      {
+        username: 'admin',
+        password: passwordGen('admin'),
       }
     ],
   })
