@@ -31,7 +31,7 @@ model User {
 
 model Customer {
   id           String        @id @default(auto()) @map("_id") @db.ObjectId
-  cust_id      String        @unique
+  cust_id      String?        @unique
   cust_name    String
   cust_phone   String
   cust_address String

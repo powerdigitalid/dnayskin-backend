@@ -125,3 +125,27 @@ exports.delete = (req, res) => {
     }
   );
 };
+exports.generateCustomerId = async (req, res) => {
+  const { id, cust_name } = req.body;
+  const customer_id = await generateId(cust_name);
+  prisma.customer.update({
+    where: {
+      id: id,
+    },
+    data: {
+      cust_id: customer_id,
+    },
+  })
+    .then((data) => {
+      res.status(200).json({
+        message: "Customer ID generated successfully!",
+        data: data,
+      });
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while generating the Customer ID.",
+      });
+    });
+};

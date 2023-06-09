@@ -9,5 +9,6 @@ router.get('/:id', validateToken, customerController.showById);
 router.post('/create', validateToken, customerController.create);
 router.put('/update/:id', validateToken, customerController.update);
 router.delete('/delete/:id', validateToken, customerController.delete);
+router.post('/generate-customer-id', validateToken, customerController.generateCustomerId);
 
 module.exports = router;
