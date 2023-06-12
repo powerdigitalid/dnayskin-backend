@@ -65,6 +65,27 @@ exports.showById = (req, res) => {
     });
   });
 };
+exports.showByCustomerName = (req, res) => {
+  //get by customerName (string)
+  const { customerName } = req.params;
+  prisma.order.findMany({
+    where: {
+      customerName: customerName
+    }
+  }).then((data) => {
+    res.status(200).json({
+      status: 200,
+      message: 'Order fetched successfully!',
+      data: data
+    });
+  }).catch((err) => {
+    res.status(500).send({
+      message:
+        err.message || "Some error occurred while fetching the Order.",
+    });
+  });
+};
+
 exports.update = (req, res) => {
   const { id } = req.params;
   const { order_detail, order_date, order_desc, order_total, order_payment, anamnesa, diagnosa, terapi, userId, customerId } = req.body;

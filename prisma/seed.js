@@ -6,20 +6,24 @@ async function main() {
   const users = await prisma.user.createMany({
     data: [
       {
-        username: 'alice',
-        password: passwordGen('alice'),
+        username: 'vita',
+        password: passwordGen('rumahathanowner'),
       },
       {
-        username: 'bob',
-        password: passwordGen('bob'),
+        username: 'songgon',
+        password: passwordGen('cabangsonggon01'),
       },
       {
-        username: 'carol',
-        password: passwordGen('carol'),
+        username: 'rogojampi',
+        password: passwordGen('cabangrogojampi02'),
+      },
+      {
+        username: 'melaya',
+        password: passwordGen('cabangmelaya03'),
       },
       {
         username: 'admin',
-        password: passwordGen('admin'),
+        password: passwordGen('pdt'),
       }
     ],
   })
