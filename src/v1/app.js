@@ -17,16 +17,16 @@ app.get('/', (req, res) => {
   res.status(200).json({message: 'DnaySkin API v1'});
 });
 
-app.use('api/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument.swaggerSpec));
-app.use('api/v1/auth', require('./routes/auth.route'));
-app.use('api/v1/banner', require('./routes/banner.route'));
-app.use('api/v1/customer', require('./routes/customer.route'));
-app.use('api/v1/dashboard', require('./routes/dashboard.route'));
-app.use('api/v1/product', require('./routes/product.route'));
-app.use('api/v1/order', require('./routes/order.route'));
-app.use('api/v1/reservation', require('./routes/reservation.route'));
-app.use('api/v1/treatment', require('./routes/treatment.route'));
-app.use('api/v1/upload', require('./routes/upload.route'));
-app.use('api/v1/uploaded', express.static(path.join(__dirname, '/../../uploads')));
+app.use('rumahatha-backend/api/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument.swaggerSpec));
+app.use('rumahatha-backend/api/v1/auth', require('./routes/auth.route'));
+app.use('rumahatha-backend/api/v1/banner', require('./routes/banner.route'));
+app.use('rumahatha-backend/api/v1/customer', require('./routes/customer.route'));
+app.use('rumahatha-backend/api/v1/dashboard', require('./routes/dashboard.route'));
+app.use('rumahatha-backend/api/v1/product', require('./routes/product.route'));
+app.use('rumahatha-backend/api/v1/order', require('./routes/order.route'));
+app.use('rumahatha-backend/api/v1/reservation', require('./routes/reservation.route'));
+app.use('rumahatha-backend/api/v1/treatment', require('./routes/treatment.route'));
+app.use('rumahatha-backend/api/v1/upload', require('./routes/upload.route'));
+app.use('rumahatha-backend/api/v1/uploaded', express.static(path.join(__dirname, '/../../uploads')));
 
 module.exports = app;
