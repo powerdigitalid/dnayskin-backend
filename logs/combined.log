@@ -55312,3 +55312,15 @@
 [35m[39m
 2023-06-12 11:43:41:4341 [35mhttp[39m: [35m::1 POST /api/v1/auth/login 401 29 - 162.147 ms[39m
 [35m[39m
+2023-07-06 06:17:50:1750 [35mhttp[39m: [35m::ffff:127.0.0.1 POST /rumahatha-backend/api/v1/upload 404 171 - 22.343 ms[39m
+[35m[39m
+2023-07-06 06:20:30:2030 [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/v1/upload 404 153 - 100.696 ms[39m
+[35m[39m
+2023-07-06 06:21:18:2118 [35mhttp[39m: [35m::ffff:127.0.0.1 POST /rumahatha-backend/api/v1/upload 404 171 - 27.936 ms[39m
+[35m[39m
+2023-07-06 06:27:26:2726 [35mhttp[39m: [35m::ffff:127.0.0.1 POST /rumahatha-backend/api/v1/upload 404 171 - 15.922 ms[39m
+[35m[39m
+2023-07-06 06:28:07:287 [35mhttp[39m: [35m::ffff:127.0.0.1 POST /rumahatha-backend/api/v1/upload/image 500 248 - 53.132 ms[39m
+[35m[39m
+2023-07-06 06:28:56:2856 [35mhttp[39m: [35m::ffff:127.0.0.1 POST /rumahatha-backend/api/v1/upload/image 200 79 - 78.550 ms[39m
+[35m[39m
